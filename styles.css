@@ -1,3 +1,9 @@
 .color-item-navbar{
     color: white;
 }
+
+
+#nuestra-mision h1,
+#nuestra-mision p {
+    color: red;
+}
