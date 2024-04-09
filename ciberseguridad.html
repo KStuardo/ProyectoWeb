@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <title>Ciberseguridad</title>
@@ -8,7 +8,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
+    <link rel="stylesheet" href="styles.css" />
     <!-- Bootstrap CSS v5.2.1 -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
@@ -20,75 +20,212 @@
 
   <body>
     <header>
-      <!-- navbar -->
-      <nav class=" navbar navbar-expand-lg bg-dark container-fluid">
+      <!-- Menu de navegacion -->
+
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark c">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
-            <img src="/images/Logo_Puño_Circular_Deportivo_Rojo_Negro__1_-removebg-preview.png" alt="Logo" width="120" height="120" class="d-inline-block align-text-top">
+            <img
+              src="images/Logo_Puño_Circular_Deportivo_Rojo_Negro__1_-removebg-preview.png"
+              alt="Logo"
+              width="120"
+              height="120"
+              class="d-inline-block align-text-top"
+            />
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                <a class="nav-link" aria-current="page" href="#">Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Quienes Somos</a>
               </li>
-              <li class="nav-item dropdown ">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <!--boton usuarios -->
+              <button
+                type="button"
+                class="btn btn-dark"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Usuarios
+              </button>
+
+              
+              <ul class="dropdown-menu">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
                   Categorias
                 </a>
-                <!-- seccion inico de sesiones -->
-                <li class="nav-item">
-                 <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                     Inicio Sesion
-                    </button>
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel">Inicio Sesion</h1>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                          </div>
-                          <div class="modal-body">
-                            ...
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                </li>
-              </li>
-                <ul class="dropdown-menu">
+                
                   <li><a class="dropdown-item" href="#">Ciberseguridad</a></li>
-                  <li><a class="dropdown-item" href="#">Inteligencia Artificial</a></li>
-                  <li><hr class="dropdown-divider"></li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Inteligencia Artificial</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
                   <li><a class="dropdown-item" href="#">Noticias Duoc</a></li>
                 </ul>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Buscame" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Buscar</button>
-            </form>
+          
 
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscame"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Buscar
+              </button>
+            </form>
           </div>
         </div>
       </nav>
     </header>
-    <main></main>
+    <main>
+     
+     
+    </main>
+
+    <img 
+    img src="/ProyectoWeb/images/bannerciberseguridad.png" class="img-fluid" alt="banner">
+    <div class="card text-center">
+      <div class="card-header">
+        Noticias Caosnews -2024
+      </div>
+      <div class="card-body bg-dark">
+        <h5 class="card-title text-white">Ley Marco de Ciberseguridad es publicada en el Diario Oficial</h5>
+        <p class="card-text text-white">Hoy lunes 8 de abril fue publicada la nueva ley marco, que tiene por objetivo establecer la institucionalidad, los principios y la normativa general que permitan estructurar, regular y coordinar las acciones de ciberseguridad de los organismos del Estado y de los particulares que prestan servicios esenciales para el funcionamiento del país.</p>
+        <a href="#" class="btn btn-danger">leer mas</a>
+      </div>
+      <div class="card-footer text-body-secondary   ">
+        8 de abril de 2024 a las 10:50
+      </div>
+    </div>
+    <div class="container-fluid ">
+      <img class="rounded mx-auto d-block "  src="/ProyectoWeb/images/diario.png" alt="diario" >
+      <div class="card container-fluid bg-dark">
+        <div class="card-body bg-dark text-white">
+          <p>Con la publicación en el Diario Oficial, la Ley N°21.663 Marco de Ciberseguridad se convierte en ley el modelo de gobernanza en ciberseguridad, lo que representa un avance importante en materia de seguridad digital para todos los ciudadanos, y un paso que pone a Chile en la vanguardia a nivel latinoamericano.
+
+            En la ley se se crean las siguientes capacidades:
+            
+            La Agencia Nacional de Ciberseguridad (ANCI)
+            El Consejo Multisectorial, mientras que se mantiene el Comité Interministerial de Ciberseguridad
+            La Red de Conectividad Segura del Estado
+            El CSIRT Nacional y el CSIRT de Defensa
+            Además, la nueva ley define los servicios esenciales, es decir, aquellos provistos por los organismos de la Administración del Estado y por el Coordinador Eléctrico Nacional, los prestados bajo concesión de servicio público y por aquellas instituciones privadas que realicen las siguientes actividades: generación, transmisión o distribución eléctrica; transporte, almacenamiento o distribución de combustibles; suministro de agua potable o saneamiento; telecomunicaciones; infraestructura digital; servicios digitales y servicios de tecnología de la información gestionados por terceros; transporte terrestre, aéreo, ferroviario o marítimo, así como la operación de su infraestructura respectiva; banca, servicios financieros y medios de pago; administración de prestaciones de seguridad social; servicios postales y de mensajería; y prestación institucional de salud por entidades tales como hospitales y clínicas.
+            
+            Así también, la agencia podrá designar otros servicios como esenciales cuando su afectación cause un grave daño a la vida o integridad física de la población o a su abastecimiento.
+            
+            Cabe destacar que los servicios esenciales tendrán dos obligaciones: el deber de adoptar medidas permanentes para prevenir, reportar y resolver incidentes de ciberseguridad: protocolos y estándares de la ANCI o sectoriales; y el deber de reportar al CSIRT Nacional los ciberataques e incidentes de ciberseguridad que puedan tener efectos significativos.</p>
+        </div>
+      </div>
+    </div>
+   
+    <!--banner-->
+    
+   
+    <div class="d-grid gap-2 col-6 mx-auto container-fluid">
+      <button class="btn btn-primary" type="button"  >Revisa la ley aqui</button>
+      
+    </div>
+ 
     <footer>
-      <!-- place footer here -->
+      <div>
+        <ul class="nav justify-content-center bg-white  container-fluid ">
+          
+          <li class="nav-img">
+            <img src="/ProyectoWeb/images/instagram.png" alt="INSTAGRAM"  width="40"
+            height="40">
+          </li>
+          <li class="nav-item">
+            <img src="/ProyectoWeb/images/facebook.png" alt="facebook" width="40"
+            height="40">
+          </li>
+          <li class="nav-item">
+            <img src="/ProyectoWeb/images/logotipo-de-github.png" alt="facebook" width="40"
+            height="40">
+          </li>
+        </ul>
+      </div>
+
+      <!-- Modal -->
+      <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Modal title
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body ">
+            <div class="container"> 
+              <form class="m-2">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">
+              Save changes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     </footer>
+
     <!-- Bootstrap JavaScript Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
