@@ -7,3 +7,91 @@
 #nuestra-mision p {
     color: red;
 }
+
+
+
+
+
+
+/*    estilo de la pagina fondo negro */
+
+
+body {
+    text-align: center;
+    background-color: black; 
+}
+
+.container {
+    display: inline-block;
+    text-align: left;
+}
+
+main {
+    background-color: black;
+    color: red;
+    padding: 20px;
+}
+
+.footer-container {
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
+
+.horizontal-space {
+    height: 50px;
+    background-color: white;
+}
+
+.black-space {
+    height: 50px;
+    background-color: black;
+}
+
+.enlaces a img {
+    background-color: white; /* Agrega fondo blanco a las imágenes enlaces */
+}
+/*fin estilos fondo de pagina y margen*/
+
+
+
+
+
+
+
+/* Estilo para el contenedor  de hernan saavedra  imagen blanca con fondo negro */
+.bg-dark-container {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+
+/* Estilo para el texto de la sección de imagen */
+.image-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+/* Estilo para la sección del equipo */
+.team-section {
+    margin-top: 50px; position: relative;
+    text-align: center; /* Centrar el contenido horizontalmente */
+    
+    }
+
+/* Estilo para el texto dentro del contenedor blanco */
+.bg-white h5,
+.bg-white .small {
+    color: #000;
+}
+
+
+/* fin estilos hernancito*/
+
+    
+
+
+
+
+
