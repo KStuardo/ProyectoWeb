@@ -5,7 +5,7 @@
 
 #nuestra-mision h1,
 #nuestra-mision p {
-    color: red;
+    color: rgb(254, 249, 249);
 }
 
 
@@ -26,7 +26,7 @@ body {
 
 main {
     background-color: black;
-    color: red;
+    color: rgb(254, 253, 253);  /* color del texto */
     padding: 20px;
 }
 
