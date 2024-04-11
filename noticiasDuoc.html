@@ -18,62 +18,48 @@
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark container-fluid">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="images/Logo_Puño_Circular_Deportivo_Rojo_Negro__1_-removebg-preview.png" alt="Logo"
-                        width="120" height="120" class="d-inline-block align-text-top">
+                    <img src="images/Logo_Puño_Circular_Deportivo_Rojo_Negro__1_-removebg-preview.png"
+                        alt="Logo" width="120" height="120" class="d-inline-block align-text-top">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    aria-label="Toggle navigation">
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Inicio</a>
+                            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Quienes Somos</a>
-                        </li>
-                        <!--boton usuarios -->
-                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal">
-                            Usuarios
-                        </button>
-                        <!-- Modal -->
-                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header">
-                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        ...
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                        <button type="button" class="btn btn-primary">Save changes</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                            <a class="nav-link" href="MisionVision.html">Quienes Somos</a>
+                            <li class="nav-item dropdown">
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Usuarios</a>
+        
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#myModal">Iniciar sesión</a></li>
+                                    <li><a class="dropdown-item" href="#">Registrarse</a></li>
+                                </ul>                     
+                     
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Categorias
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="ciberseguridad.html">Ciberseguridad</a></li>
                                 <li><a class="dropdown-item" href="IA.html">Inteligencia Artificial</a></li>
-                                <li><hr class="dropdown-divider" /></li>
-                                <li><a class="dropdown-item" href="noticiasDuoc.html">Noticias Duoc</a></li>
-                            </ul>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="noticiasDuoc.html">Noticias Duocs</a></li>
+                                </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="Carrito.html">Cursos</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Buscame" aria-label="Search" />
+                        <input class="form-control me-2" type="search" placeholder="Buscame" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Buscar</button>
                     </form>
                 </div>
@@ -89,6 +75,17 @@
     <br><br>
  <!--  fin boton volver -->
  <body>
+       <!--card principal-->
+   <div class="card text-bg-dark">
+    <img src="images/noticias duoc fondo.jpg" class="card-img" alt="...">
+    <div class="card-img-overlay">
+      <h1 class="card-title-center">NOTICIAS INFORMATICAS</h1>
+      <p class="card-text"></p>
+      <div class="d-grid gap-2 col-6 mx-auto">
+      </div>
+  </div>
+
+  <br>
     <div class="container-fluid p-0">
         <div class="row justify-content-center align-items-center">
             <div class="col-md-6">

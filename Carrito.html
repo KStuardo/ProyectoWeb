@@ -73,9 +73,17 @@
             </div>
         </nav>
     </header>
+            <!-- boton volver -->
+            <br>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end container-fluid">
+                <a href="javascript:history.back()" class="btn btn-primary" role="button">Volver</a>
+            </div>
+    
+            <br><br>
+        
 
  
-
+<br>
 <!--Cards cursos-->
 <div class="container">
 
@@ -83,7 +91,7 @@
    <div class="card text-bg-dark">
     <img src="images/fondocursos.jpg" class="card-img" alt="...">
     <div class="card-img-overlay">
-      <h1 class="card-title-center">CURSOS, CAPACITACIONES, SUBSCRIPCION</h1>
+      <h1 class="card-title-center">CURSOS, CAPACITACIONES, SUSCRIPCIÓN.</h1>
       <p class="card-text"></p>
       <div class="d-grid gap-2 col-6 mx-auto">
       <button type="button" class="btn btn-outline-danger">Suscribete</button>
@@ -213,11 +221,12 @@
 
 
 
-
+<!-- libreria v para que funcione el  cuando toquen el boton agregar carrito.-->
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 
-<script>
+<!-- funcion para que diga agregar al carrito cuando lo selecciona.-->
+<script>   
     function agregarCarrito(){
         alert("Producto agregado!")
     }

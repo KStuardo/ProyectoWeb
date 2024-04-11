@@ -35,10 +35,16 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="MisionVision.html">Quienes Somos</a>
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Usuarios</a>
-                            </li>
-                        </li>
+                            <li class="nav-item dropdown">
+
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Usuarios</a>
+        
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                                            data-bs-target="#myModal">Iniciar sesión</a></li>
+                                    <li><a class="dropdown-item" href="#">Registrarse</a></li>
+                                </ul>                     
+                     
                         <li class="nav-item dropdown ">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Categorias
@@ -48,7 +54,10 @@
                                 <li><a class="dropdown-item" href="IA.html">Inteligencia Artificial</a></li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item" href="noticiasDuoc.html">Noticias Duocs</a></li>
-                            </ul>
+                                </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="Carrito.html">Cursos</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
@@ -59,8 +68,14 @@
             </div>
         </nav>
     </header>
-
-    <div class="horizontal-space"></div>
+            <!-- boton volver -->
+            <br>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end container-fluid">
+                <a href="javascript:history.back()" class="btn btn-primary" role="button">Volver</a>
+            </div>
+    
+            <br><br>
+        
 
     <main>
         <!-- imagenes finales -->
