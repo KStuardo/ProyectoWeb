@@ -106,11 +106,11 @@ main {
 /*footer*/
 .site-footer
 {
-  background-color:#26272b;
+  background-color:#010206; /* color de fondo del footer*/
   padding:45px 0 20px;
   font-size:15px;
   line-height:24px;
-  color:#737373;
+  color:#f6f0f0; /* color letras parte derecha del lado izquierdo footer*/
 }
 .site-footer hr
 {
@@ -131,7 +131,7 @@ main {
 }
 .site-footer a
 {
-  color:#737373;
+  color:#f8f3f3; /* texto parte de abajo del footer */
 }
 .site-footer a:hover
 {
@@ -147,9 +147,9 @@ main {
 {
   display:block
 }
-.footer-links a
+.footer-links a /* colores de links lado izquierdo footer*/
 {
-  color:#737373
+  color:#f8f4f4
 }
 .footer-links a:active,.footer-links a:focus,.footer-links a:hover
 {
@@ -172,7 +172,7 @@ main {
   margin-left:6px;
   margin-right:0;
   border-radius:100%;
-  background-color:#33353d
+  background-color:#33353d /* colores de los circulos  de iconos */
 }
 .copyright-text
 {
@@ -217,7 +217,7 @@ main {
 }
 .social-icons a{
   background-color:#eceeef;
-  color:#818a91;
+  color:#000000;
   font-size:16px;
   display:inline-block;
   line-height:44px;
@@ -267,4 +267,3 @@ main {
     font-weight:600
   }
 }
-
