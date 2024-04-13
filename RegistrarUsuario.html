@@ -92,70 +92,83 @@
 
 
    <!--FORMULARIO-->
-        <h1 class="card-title-center text-white">Registro Usuario</h1>
-        <br><br><br><br>
-   <div class="container ">
-    <form class="needs-validation" novalidate>
-      <div class="form-row">
-        <div class="container col-md-4 mb-4 text-white">
-          <label for="validationCustom01">NOMBRE</label>
-          <input type="text" class="form-control" id="validationCustom01" value="" required>
-          <div class="invalid-feedback"> 
-            INGRESE UN NOMBRE VALIDO
-          </div>
-          <div class="valid-feedback">
-            GOOD!
-          </div>
+   <h1 class="card-title-center text-white">Registro Usuario</h1>
+   <br><br><br><br><br><br>
+
+
+
+
+    <form class="row g-3 needs-validation" novalidate>
+      <div class="col-md-4 text-white">
+        <label for="validationCustom01" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+        <div class="valid-feedback">
+          OK!
         </div>
-        <div class="container col-md-4 mb-4 text-white">
-          <label for="validationCustom02">APELLIDOS</label>
-          <input type="text" class="form-control" id="validationCustom02" value="" required>
-          <div class="invalid-feedback"> 
-            INGRESE UN APELLIDO VALIDO
-          </div>
-          <div class="valid-feedback">
-            GOOD!
+      </div>
+      <div class="col-md-4 text-white">
+        <label for="validationCustom02" class="form-label">Apellido</label>
+        <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+        <div class="valid-feedback">
+          OK!
+        </div>
+      </div>
+      <div class="col-md-4 text-white">
+        <label for="validationCustomUsername" class="form-label">Email</label>
+        <div class="input-group has-validation">
+          <span class="input-group-text" id="inputGroupPrepend">@</span>
+          <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+          <div class="invalid-feedback">
+            Ingrese Email.
           </div>
         </div>
       </div>
-      <div class="form-row">
-        <div class="container col-md-4 mb-3 text-white">
-          <label for="validationCustom03">CIUDAD</label>
-          <input type="text" class="form-control" id="validationCustom03" required>
-          <div class="invalid-feedback">
-            INGRESE CIUDAD VALIDA.
-          </div>
-          <div class="valid-feedback">
-            GOOD!
-          </div>
-        </div>
-   
-        <div class="container col-md-4 mb-3 text-white">
-          <label for="validationCustom05">TELEFONO O CORREO</label>
-          <input type="text" class="form-control" id="validationCustom05" required>
-          <div class="invalid-feedback">
-            INGRESE UN NUMERO VALIDO.
-          </div>
-          <div class="valid-feedback">
-            GOOD!
-          </div>
+      <div class="col-md-6 text-white">
+        <label for="validationCustom03" class="form-label">Cuidad</label>
+        <input type="text" class="form-control" id="validationCustom03" required>
+        <div class="invalid-feedback">
+          Ingrese su cuidad.
         </div>
       </div>
-      <div class="container form-group text-white">
-        <div class="form-check"><center>
+      <div class="col-md-3 text-white">
+        <label for="validationCustom04" class="form-label">Sexo</label>
+        <select class="form-select" id="validationCustom04" required>
+          <option selected disabled value="">Selecciona...</option>
+          <option>Femenino</option>
+          <option>Masculino</option>
+          <option>No Responder</option>
+
+        </select>
+        <div class="invalid-feedback">
+          Selecciona una alternativa.
+        </div>
+      </div>
+      <div class="col-md-3 text-white">
+        <label for="validationCustom05" class="form-label">Telefono</label>
+        <input type="text" class="form-control" id="validationCustom05" required>
+        <div class="invalid-feedback">
+          Ingrese su telefono.
+        </div>
+      </div>
+      <div class="col-12 text-white">
+        <div class="form-check">
           <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
           <label class="form-check-label" for="invalidCheck">
-            ACEPTES TERMINOS Y CONDICIONES
-          </label></center>
-          <div class="container invalid-feedback"><center>
-            Acepte terminos y condiciones para enviar
-          </center>          
+            Acepta los terminos y condiciones
+          </label>
+          <div class="invalid-feedback">
+            Debes estar de acuerdo antes de enviar.
           </div>
         </div>
-      </div><center>
-        <button class="btn btn-primary" type="submit">ENVIAR FORMULARIO DE CONTACTO</button>
-      </center><br><br>
-      
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit">Submit form</button>
+      </div>
+    </form>
+
+
+
+
     </form>
   
     <!--SCRIPT-->
