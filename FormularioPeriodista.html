@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <title>Formulario Periodista</title>
+   
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -19,7 +20,7 @@
       
   </head>
   
-<body>
+  <body style="background-color: black;">
   <header>
     <!-- Menu de navegacion -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark container-fluid">
@@ -88,88 +89,170 @@
     
 
             
+        <title>Validación</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    </head>
+    <body>
 
 
+        <br/>
+        <div class="container text-white" >
+          <div class="container text-white" style="background-color: black; padding: 20px;">
+            <form action="" name="nameForm" method="post"  >
+                <h2>Formulario Periodista </h2>
+                <div class="form-group">
+                    <label for="rut">RUT CHILE</label>
+                    <input type="text" class="form-control"  id="rut" aria-describedby="rut chileno" placeholder="Rut">
+                    <small id="rutHelp" class="form-text text-muted">Formato de rut XX.XXX.XXX-X .</small>
+                    <div class="valid-feedback">
+                        Se ve bien!
+                    </div>
+                    <div class="invalid-feedback">
+                        Please choose a username.
+                    </div>
+                </div>
 
-   <!--FORMULARIO-->
-        <h1 class="card-title-center text-white">Registrar Periodista</h1>
-        <br><br><br><br>
-   <div class="container ">
-    <form class="needs-validation" novalidate>
-      <div class="form-row">
-        <div class="container col-md-4 mb-4 text-white">
-          <label for="validationCustom01">NOMBRE</label>
-          <input type="text" class="form-control" id="validationCustom01" value="" required>
-          <div class="invalid-feedback"> 
-            INGRESE UN NOMBRE VALIDO
-          </div>
-          <div class="valid-feedback">
-            GOOD!
-          </div>
-        </div>
-        <div class="container col-md-4 mb-4 text-white">
-          <label for="validationCustom02">APELLIDOS</label>
-          <input type="text" class="form-control" id="validationCustom02" value="" required>
-          <div class="invalid-feedback"> 
-            INGRESE UN APELLIDO VALIDO
-          </div>
-          <div class="valid-feedback">
-            GOOD!
-          </div>
-        </div>
-      </div>
-      <div class="form-row">
-        <div class="container col-md-4 mb-3 text-white">
-          <label for="validationCustom03">CIUDAD</label>
-          <input type="text" class="form-control" id="validationCustom03" required>
-          <div class="invalid-feedback">
-            INGRESE CIUDAD VALIDA.
-          </div>
-          <div class="valid-feedback">
-            GOOD!
-          </div>
-        </div>
-   
-        <div class="container col-md-4 mb-3 text-white">
-          <label for="validationCustom05">TELEFONO O CORREO</label>
-          <input type="text" class="form-control" id="validationCustom05" required>
-          <div class="invalid-feedback">
-            INGRESE UN NUMERO VALIDO.
-          </div>
-          <div class="valid-feedback">
-            GOOD!
-          </div>
-        </div>
-      </div>
-      <div class="container col-md-4 mb-3 text-white">
-        <label for="validationCustom05">TELEFONO O CORREO</label>
-        <input type="text" class="form-control" id="validationCustom05" required>
-        <div class="invalid-feedback">
-          INGRESE UN NUMERO VALIDO.
-        </div>
-        <div class="valid-feedback">
-          GOOD!
-        </div>
-      </div>
-    </div>
-    
-      <div class="container form-group text-white">
-        <div class="form-check"><center>
-          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-          <label class="form-check-label" for="invalidCheck">
-            ACEPTES TERMINOS Y CONDICIONES
-          </label></center>
-          <div class="container invalid-feedback"><center>
-            Acepte terminos y condiciones para enviar
-          </center>          
-          </div>
-        </div>
-      </div><center>
-        <button class="btn btn-primary" type="submit">ENVIAR FORMULARIO DE CONTACTO</button>
-      </center><br><br>
-      
-    </form>
-  
+                <div class="form-group">
+                    <label for="numeroExample1">Numero</label>
+                    <input type="number" class="form-control"  id="numeroExample1" aria-describedby="Numero" placeholder="Numero">
+                    <small id="numeroHelp" class="form-text text-muted">Escribe solo números.</small>
+                    <div class="valid-feedback">
+                        Se ve bien!
+                    </div>
+                    <div class="invalid-feedback">
+                        El texto no es un número.
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="textoExample1">Texto</label>
+                    <input type="text" class="form-control"  id="textoExample1" aria-describedby="Texto" placeholder="Texto">
+                    <small id="textHelp" class="form-text text-muted">Texto obligatorio.</small>
+                    <div class="valid-feedback">
+                        Se ve bien!
+                    </div>
+                    <div class="invalid-feedback">
+                        Escribe al menos un carácter.
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Correo electrónico</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo electrónico">
+                    <small id="emailHelp" class="form-text text-muted">Escribe un correo electrónico valido.</small>
+                    <div class="valid-feedback">
+                        ¡Buen Email!
+                    </div>
+                    <div class="invalid-feedback">
+                        No es un correo electrónico
+                    </div>
+                </div>
+                <!--Inicio de radios-->
+                <div class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" required>
+                    <label class="custom-control-label" for="customControlValidation2">Reportero</label>
+                </div>
+
+                <div class="custom-control custom-radio mb-3">
+                    <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked" required>
+                    <label class="custom-control-label" for="customControlValidation3">Periodista</label>
+                    <small id="radioHelp" class="form-text text-muted">Selecciona al menos una opción.</small>
+                    <div class="valid-feedback">
+                        ¡Fantástica elección!
+                    </div>
+                    <div class="invalid-feedback">
+                        No te olvides de seleccionar al menos una opción.
+                    </div>
+                </div>
+                <!--Fin de radios-->
+                <div class="form-group">
+                    <select id="selectExample1" class="custom-select" required>
+                        <option value="select">Selecciona una Opcion</option>
+                        <option value="1">Femenino</option>
+                        <option value="2">Masculino</option>
+                        <option value="3">Otro</option>
+                    </select>
+                    <small id="selectHelp" class="form-text text-muted">Selecciona al menos una opción.</small>
+                    <div class="valid-feedback">
+                        ¡Fantástica elección!
+                    </div>
+                    <div class="invalid-feedback">
+                        No te olvides de seleccionar al menos una opción.
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Porque quieres trabajar con nosotros</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <small id="textareaHelp" class="form-text text-muted">Texto obligatorio.</small>
+                    <div class="valid-feedback">
+                        Se ve bien!
+                    </div>
+                    <div class="invalid-feedback">
+                        Escribe al menos un carácter.
+                    </div>
+                </div>
+                <div class="row" >
+                    <div class="col-md-11" >
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="validatedCustomFile" required lang="es" >
+                            <label class="custom-file-label" for="validatedCustomFile">Envia tu C.V</label>
+                            <small id="fileHelp" class="form-text text-muted">Suba el archivo que tenga las extensiones .jpeg / .jpg / .png / .gif solamente.</small>
+                            <div class="valid-feedback">
+                                Se ve bien!
+                            </div>
+                            <div class="invalid-feedback">
+                                Debes ingresar una imagen.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-1 text-center" >
+                        <img id="imagePreview" src="https://img.icons8.com/flat_round/1600/upload-document.png" alt="" class="rounded-circle" style="width: 55px; height: 55px;" >
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Constraseña</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Constraseña">
+                    <small id="passwordHelp" class="form-text text-muted">Se recomienda entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula, al menos una mayúscula y al menos un carácter no alfanumérico.</small>
+                    <div class="valid-feedback">
+                        ¡Fantástica elección!
+                    </div>
+                    <div class="invalid-feedback">
+                        La contraseña debe tener mínimo 6 caracteres, al menos una mayúscula, al menos una minúscula, al menos un número.  
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword2">Confirmar contraseña</label>
+                    <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Constraseña">
+                    <small id="password2Help" class="form-text text-muted">Debe coincidir.</small>
+                    <div class="valid-feedback">
+                        ¡Perfecto!
+                    </div>
+                    <div class="invalid-feedback">
+                        Las contraseñas no coinciden, ¡reintenta!
+                    </div>
+                </div>
+                <div class="custom-control custom-checkbox mb-3">
+                    <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
+                    <label class="custom-control-label" for="customControlValidation1">Usted acepta nuestros términos de servicio y declaración de privacidad.</label>
+                    <small id="checkboxHelp" class="form-text text-muted">Acá puedes ver nuestras políticas <a href="#" class="alert-link">Declaración de privacidad</a></small>
+                    <div class="valid-feedback">
+                        ¡No te arrepentirás!
+                    </div>
+                    <div class="invalid-feedback">
+                        ¡No sabes de lo que te pierdes!
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+         
+
+            <br><br><br><br><br>
     <!--SCRIPT-->
     <div>
       <script>
