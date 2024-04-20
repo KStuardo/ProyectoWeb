@@ -101,157 +101,95 @@
         <div class="container text-white d-flex justify-content-center align-items-center" style="min-height: 100vh;">
           <div class="container text-white" style="background-color: black; padding: 20px;">
               <form action="" name="nameForm" method="post">
-                  <h2>Formulario Periodista</h2>
-                  <div class="form-group">
-                      <label for="rut">RUT CHILE</label>
-                      <input type="text" class="form-control" id="rut" aria-describedby="rut chileno" placeholder="Rut">
-                      <small id="rutHelp" class="form-text text-muted">Formato de rut XX.XXX.XXX-X.</small>
-                      <div class="valid-feedback">
-                          Se ve bien!
-                      </div>
-                      <div class="invalid-feedback">
-                          Please choose a username.
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="numeroExample1">Numero</label>
-                    <input type="number" class="form-control"  id="numeroExample1" aria-describedby="Numero" placeholder="Numero">
-                    <small id="numeroHelp" class="form-text text-muted">Escribe solo números.</small>
-                    <div class="valid-feedback">
-                        Se ve bien!
-                    </div>
-                    <div class="invalid-feedback">
-                        El texto no es un número.
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="textoExample1">Texto</label>
-                    <input type="text" class="form-control"  id="textoExample1" aria-describedby="Texto" placeholder="Texto">
-                    <small id="textHelp" class="form-text text-muted">Texto obligatorio.</small>
-                    <div class="valid-feedback">
-                        Se ve bien!
-                    </div>
-                    <div class="invalid-feedback">
-                        Escribe al menos un carácter.
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Correo electrónico</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Correo electrónico">
-                    <small id="emailHelp" class="form-text text-muted">Escribe un correo electrónico valido.</small>
-                    <div class="valid-feedback">
-                        ¡Buen Email!
-                    </div>
-                    <div class="invalid-feedback">
-                        No es un correo electrónico
-                    </div>
-                </div>
-                <!--Inicio de radios-->
-                <div class="custom-control custom-radio">
-                    <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked" required>
-                    <label class="custom-control-label" for="customControlValidation2">Reportero</label>
-                </div>
-
-                <div class="custom-control custom-radio mb-3">
-                    <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked" required>
-                    <label class="custom-control-label" for="customControlValidation3">Periodista</label>
-                    <small id="radioHelp" class="form-text text-muted">Selecciona al menos una opción.</small>
-                    <div class="valid-feedback">
-                        ¡Fantástica elección!
-                    </div>
-                    <div class="invalid-feedback">
-                        No te olvides de seleccionar al menos una opción.
-                    </div>
-                </div>
-                <!--Fin de radios-->
-                <div class="form-group">
-                    <select id="selectExample1" class="custom-select" required>
-                        <option value="select">Selecciona una Opcion</option>
-                        <option value="1">Femenino</option>
-                        <option value="2">Masculino</option>
-                        <option value="3">Otro</option>
-                    </select>
-                    <small id="selectHelp" class="form-text text-muted">Selecciona al menos una opción.</small>
-                    <div class="valid-feedback">
-                        ¡Fantástica elección!
-                    </div>
-                    <div class="invalid-feedback">
-                        No te olvides de seleccionar al menos una opción.
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Porque quieres trabajar con nosotros</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                    <small id="textareaHelp" class="form-text text-muted">Texto obligatorio.</small>
-                    <div class="valid-feedback">
-                        Se ve bien!
-                    </div>
-                    <div class="invalid-feedback">
-                        Escribe al menos un carácter.
-                    </div>
-                </div>
-                <div class="row" >
-                    <div class="col-md-11" >
-                        <div class="custom-file">
-                            <input type="file" class="custom-file-input" id="validatedCustomFile" required lang="es" >
-                            <label class="custom-file-label" for="validatedCustomFile">Envia tu C.V</label>
-                            <small id="fileHelp" class="form-text text-muted">Suba el archivo que tenga las extensiones .jpeg / .jpg / .png / .gif solamente.</small>
-                            <div class="valid-feedback">
-                                Se ve bien!
+                <div class="container text-white d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+                    <div class="container text-white" style="background-color: black; padding: 20px;">
+                        <form action="javascript:void(0);" name="nameForm" onsubmit="return validarFormulario()" method="post">
+                            <h2>Formulario Periodista</h2>
+            
+                            <div class="form-group">
+                                <label for="rut">RUT CHILE</label>
+                                <input type="text" class="form-control" id="rut" aria-describedby="rutHelp" placeholder="Rut" required>
+                                <small id="rutHelp" class="form-text text-muted">Rut debe tener entre 9 y 10 caracteres.</small>
                             </div>
-                            <div class="invalid-feedback">
-                                Debes ingresar una imagen.
+            
+                            <div class="form-group">
+                                <label for="nombre">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" aria-describedby="nombreHelp" placeholder="Nombre" minlength="3" maxlength="20" required>
+                                <small id="nombreHelp" class="form-text text-muted">Nombre debe tener entre 3 y 20 caracteres.</small>
                             </div>
-                        </div>
+            
+                            <div class="form-group">
+                                <label for="apellidoPaterno">Apellido Paterno</label>
+                                <input type="text" class="form-control" id="apellidoPaterno" aria-describedby="apellidoPaternoHelp" placeholder="Apellido Paterno" minlength="3" maxlength="20" required>
+                                <small id="apellidoPaternoHelp" class="form-text text-muted">Apellido Paterno debe tener entre 3 y 20 caracteres.</small>
+                            </div>
+            
+                            <div class="form-group">
+                                <label for="apellidoMaterno">Apellido Materno</label>
+                                <input type="text" class="form-control" id="apellidoMaterno" aria-describedby="apellidoMaternoHelp" placeholder="Apellido Materno" minlength="3" maxlength="20" required>
+                                <small id="apellidoMaternoHelp" class="form-text text-muted">Apellido Materno debe tener entre 3 y 20 caracteres.</small>
+                            </div>
+            
+                            <div class="form-group">
+                                <label for="fechaNacimiento">Fecha de Nacimiento</label>
+                                <input type="date" class="form-control" id="fechaNacimiento" aria-describedby="fechaNacimientoHelp" required>
+                                <small id="fechaNacimientoHelp" class="form-text text-muted">Fecha de Nacimiento es obligatoria.</small>
+                            </div>
+            
+                            <div class="form-group">
+                                <label for="edad">Edad</label>
+                                <input type="number" class="form-control" id="edad" aria-describedby="edadHelp" placeholder="Edad" min="28" max="35" required>
+                                <small id="edadHelp" class="form-text text-muted">Edad debe estar entre 28 y 35 años.</small>
+                            </div>
+            
+                            <div class="form-group">
+                                <label for="genero">Género</label>
+                                <select id="genero" class="form-control" aria-describedby="generoHelp" required>
+                                    <option value="">Selecciona Género</option>
+                                    <option value="Mujer">Mujer</option>
+                                    <option value="Hombre">Hombre</option>
+                                </select>
+                                <small id="generoHelp" class="form-text text-muted">Género debe ser mujer u hombre.</small>
+                            </div>
+            
+                            <div class="form-group">
+                                <label for="celular">Celular</label>
+                                <input type="tel" class="form-control" id="celular" aria-describedby="celularHelp" placeholder="Celular" required>
+                                <small id="celularHelp" class="form-text text-muted">Celular es obligatorio.</small>
+                            </div>
+            
+                            <div class="form-group">
+                                <label for="email">Correo electrónico</label>
+                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Correo electrónico" required>
+                                <small id="emailHelp" class="form-text text-muted">Correo electrónico debe ser válido.</small>
+                            </div>
+            
+                            <div class="form-group">
+                                <label for="profesion">Profesión</label>
+                                <input type="text" class="form-control" id="profesion" aria-describedby="profesionHelp" placeholder="Profesión" required>
+                                <small id="profesionHelp" class="form-text text-muted">Profesión es obligatoria.</small>
+                            </div>
+            
+                            <div class="form-group">
+                                <label for="motivacion">Motivación para postular al trabajo</label>
+                                <textarea class="form-control" id="motivacion" rows="3" aria-describedby="motivacionHelp" placeholder="Motivación" required></textarea>
+                                <small id="motivacionHelp" class="form-text text-muted">Motivación es obligatoria.</small>
+                            </div>
+            
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                            <button type="button" class="btn btn-secondary" onclick="generarCarta()">Crear Carta</button>
+                        </form>
                     </div>
-                    <div class="col-md-1 text-center" >
-                        <img id="imagePreview" src="https://img.icons8.com/flat_round/1600/upload-document.png" alt="" class="rounded-circle" style="width: 55px; height: 55px;" >
-                    </div>
+                </div>
+            
+                <script src="formulario.js"></script>
 
-                </div>
 
 
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Constraseña</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Constraseña">
-                    <small id="passwordHelp" class="form-text text-muted">Se recomienda entre 8 y 16 caracteres, al menos un dígito, al menos una minúscula, al menos una mayúscula y al menos un carácter no alfanumérico.</small>
-                    <div class="valid-feedback">
-                        ¡Fantástica elección!
-                    </div>
-                    <div class="invalid-feedback">
-                        La contraseña debe tener mínimo 6 caracteres, al menos una mayúscula, al menos una minúscula, al menos un número.  
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword2">Confirmar contraseña</label>
-                    <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Constraseña">
-                    <small id="password2Help" class="form-text text-muted">Debe coincidir.</small>
-                    <div class="valid-feedback">
-                        ¡Perfecto!
-                    </div>
-                    <div class="invalid-feedback">
-                        Las contraseñas no coinciden, ¡reintenta!
-                    </div>
-                </div>
-                <div class="custom-control custom-checkbox mb-3">
-                    <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
-                    <label class="custom-control-label" for="customControlValidation1">Usted acepta nuestros términos de servicio y declaración de privacidad.</label>
-                    <small id="checkboxHelp" class="form-text text-muted">Acá puedes ver nuestras políticas <a href="#" class="alert-link">Declaración de privacidad</a></small>
-                    <div class="valid-feedback">
-                        ¡No te arrepentirás!
-                    </div>
-                    <div class="invalid-feedback">
-                        ¡No sabes de lo que te pierdes!
-                    </div>
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
+
             </form>
          
-
+</body>
             <br><br><br><br><br>
     <!--SCRIPT-->
     <div>
@@ -290,5 +228,5 @@
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
     crossorigin="anonymous"
   ></script>
-</body>
+
 </html>
