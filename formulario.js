@@ -11,11 +11,15 @@ function validarFormulario() { /* como obtener datos guardados */
      dentro de la declaración "if" se ejecutará si la condición1 o la condición2 se evalúan como verdaderas. */
     if (rut.length < 9 || rut.length > 10) {  /* si el rut.length ( largo) es menor a 9  */
         alert('El RUT debe tener entre 9 y 10 caracteres.');
+        
         return false;
+    
     }
+    
 
     if (nombre.length < 3 || nombre.length > 20) {
         alert('El nombre debe tener entre 3 y 20 caracteres.');
+        
         return false;
     }
 
@@ -42,4 +46,8 @@ ${nombre}`;
 
     document.getElementById('motivacion').value = carta;  /** se crea una auto carta basica con los datos predestinados 
     en los campos rellenadosanterior mente */
+
+
+
 }
+
