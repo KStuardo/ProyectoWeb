@@ -16,7 +16,7 @@ $('#rut').focusout(function (evento) { //crea una funcion tipo evento utilizando
 
     
 });
-
+//se debe hacer por cada apartado del form 
 
 function validarFormulario() { /* como obtener datos guardados */
     
