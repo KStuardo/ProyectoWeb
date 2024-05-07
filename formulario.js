@@ -1,5 +1,25 @@
+
+// $('#rut').click(function (e) { 
+//     alert('APRETE UN BOTON')
+    
+// });
+
+$('#rut').focusout(function (evento) { //crea una funcion tipo evento utilizando un evento en este caso es .focusout llamando al id rut del html
+    let oRut = evento.target.value //let un bloques de js que solamente utilizamos en el bloque .llamando al evento.target.value.value target nos trae el atributo de la etiqueta
+    let oRutId = '#'+evento.target.id 
+    if (oRut.length < 9 || oRut.length > 10) {  /* si el rut.length ( largo) es menor a 9  */
+        $(oRutId).attr('class', 'form-control is-invalid');
+        
+    }else{
+        $(oRutId).attr('class', 'form-control is-valid');
+    }
+
+    
+});
+
+
 function validarFormulario() { /* como obtener datos guardados */
-    const rut = document.getElementById('rut').value; /*Obtiene el valor del campo 'rut'*/
+    
     const nombre = document.getElementById('nombre').value;
     const apellidoPaterno = document.getElementById('apellidoPaterno').value;
     const apellidoMaterno = document.getElementById('apellidoMaterno').value;
@@ -11,7 +31,7 @@ function validarFormulario() { /* como obtener datos guardados */
      dentro de la declaración "if" se ejecutará si la condición1 o la condición2 se evalúan como verdaderas. */
     if (rut.length < 9 || rut.length > 10) {  /* si el rut.length ( largo) es menor a 9  */
         alert('El RUT debe tener entre 9 y 10 caracteres.');
-        
+       
         return false;
     
     }
