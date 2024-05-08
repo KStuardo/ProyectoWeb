@@ -16,6 +16,69 @@ $('#rut').focusout(function (evento) { //crea una funcion tipo evento utilizando
 
     
 });
+//--------------------------------------------
+$('#nombre').focusout(function (evento) { //crea una funcion tipo evento utilizando un evento en este caso es .focusout llamando al id rut del html
+    let onom = evento.target.value //let un bloques de js que solamente utilizamos en el bloque .llamando al evento.target.value.value target nos trae el atributo de la etiqueta
+    let onomId = '#'+evento.target.id 
+    if (onom.length < 3 || onom.length > 20) {  /* si el rut.length ( largo) es menor a 9  */
+        $(onomId).attr('class', 'form-control is-invalid');
+        $(oRutId).attr('class', 'form-control is-invalid');
+        
+    }else{
+        $(onomId).attr('class', 'form-control is-valid');
+    }
+
+    
+});
+//--------------------------------------------
+$('#apellidoPaterno').focusout(function (evento) { //crea una funcion tipo evento utilizando un evento en este caso es .focusout llamando al id rut del html
+    let oap = evento.target.value //let un bloques de js que solamente utilizamos en el bloque .llamando al evento.target.value.value target nos trae el atributo de la etiqueta
+    let oapId = '#'+evento.target.id 
+    if (oap.length < 3 || oap.length > 20) {  /* si el rut.length ( largo) es menor a 9  */
+        $(oapId).attr('class', 'form-control is-invalid');
+        
+    }else{
+        $(oapId).attr('class', 'form-control is-valid');
+    }
+
+    
+});
+//--------------------------------------------
+$('#apellidoMaterno').focusout(function (evento) { //crea una funcion tipo evento utilizando un evento en este caso es .focusout llamando al id rut del html
+    let oam = evento.target.value //let un bloques de js que solamente utilizamos en el bloque .llamando al evento.target.value.value target nos trae el atributo de la etiqueta
+    let oamId = '#'+evento.target.id 
+    if (oam.length < 3 || oam.length > 20) {  /* si el rut.length ( largo) es menor a 9  */
+        $(oamId).attr('class', 'form-control is-invalid');
+        
+        
+    }else{
+        $(oamId).attr('class', 'form-control is-valid');
+    }
+
+    
+});
+//--------------------------------------------
+$('#edad').focusout(function (evento) { //crea una funcion tipo evento utilizando un evento en este caso es .focusout llamando al id rut del html
+    let oedad = evento.target.value //let un bloques de js que solamente utilizamos en el bloque .llamando al evento.target.value.value target nos trae el atributo de la etiqueta
+    let oedadId = '#'+evento.target.id 
+    if (oedad< 28|| oedad> 35) {  /* si el rut.length ( largo) es menor a 9  */
+        $(oedadId).attr('class', 'form-control is-invalid');
+        
+
+        
+    }else{
+        $(oedadId).attr('class', 'form-control is-valid');
+    }
+
+    
+});
+//--------------------------------------------
+//---validador de caracteres 
+
+
+
+
+
 //se debe hacer por cada apartado del form 
 
 function validarFormulario() { /* como obtener datos guardados */
