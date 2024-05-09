@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <title>Formulario Periodista</title>
-   
+
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -11,197 +12,218 @@
     />
   
     <!-- Bootstrap CSS v5.2.1 -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"/>
-      <link rel="stylesheet" href="styles.css"> <!-- estilos de formato de pagina -->
-      
-  </head>
-  
-  <body style="background-color: black;">
-  <header>
-    <!-- Menu de navegacion -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark container-fluid">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img src="images/Logo_Puño_Circular_Deportivo_Rojo_Negro__1_-removebg-preview.png"
-                    alt="Logo" width="120" height="120" class="d-inline-block align-text-top">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="MisionVision.html">Quienes Somos</a>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="styles.css"> <!-- estilos de formato de pagina -->
+
+</head>
+
+<body style="background-color: black;">
+    <header>
+        <!-- Menu de navegacion -->
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark container-fluid">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="images/Logo_Puño_Circular_Deportivo_Rojo_Negro__1_-removebg-preview.png" alt="Logo"
+                        width="120" height="120" class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="MisionVision.html">Quienes Somos</a>
                         <li class="nav-item dropdown">
 
-                            
-    
-                                             
-                 
-                    <li class="nav-item dropdown ">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Categorias
-                        </a>
-                        <ul class="dropdown-menu bg-secondary">
-                            <li><a class="dropdown-item" href="ciberseguridad.html">Ciberseguridad</a></li>
-                            <li><a class="dropdown-item" href="IA.html">Inteligencia Artificial</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="noticiasDuoc.html">Noticias Duocs</a></li>
-                            </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="Carrito.html">Cursos</a>
-                    </li>
 
-                    <button
-                    type="button"
-                    class="btn btn-dark"
-                    data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"
-                  >
-                    Usuarios
-                  </button> 
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
-                </form>
+
+
+
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Categorias
+                            </a>
+                            <ul class="dropdown-menu bg-secondary">
+                                <li><a class="dropdown-item" href="ciberseguridad.html">Ciberseguridad</a></li>
+                                <li><a class="dropdown-item" href="IA.html">Inteligencia Artificial</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="noticiasDuoc.html">Noticias Duocs</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="Carrito.html">Cursos</a>
+                        </li>
+
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Usuarios
+                        </button>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
             </div>
-        </div>
-    </nav>
-</header>
+        </nav>
+    </header>
 
     <br><br>
-        <!-- boton volver -->
-        <br>
-        <div class="d-grid gap-2 d-md-flex justify-content-md-end container-fluid">
-            <a href="javascript:history.back()" class="btn btn-primary" role="button">Volver</a>
-        </div>
-                
-        <title>Validación</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- boton volver -->
+    <br>
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end container-fluid">
+        <a href="javascript:history.back()" class="btn btn-primary" role="button">Volver</a>
+    </div>
+
+    <title>Validación</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     </head>
+
     <body>
 
-        <br/>
+        <br />
         <div class="container text-white d-flex justify-content-center align-items-center" style="min-height: 100vh;">
-          <div class="container text-white" style="background-color: black; padding: 20px;">
-              <form action="" name="nameForm" method="post">
-                <div class="container text-white d-flex justify-content-center align-items-center" style="min-height: 100vh;">
-                    <div class="container text-white" style="background-color: black; padding: 20px;">
-                        <form action="javascript:void(0);" name="nameForm" onsubmit="return validarFormulario()" method="post">   <!-- javascript:void(0) cuando se haga click en el el enlace  -->
-                            <h2>Formulario Periodista</h2>                            <!-- onsubmit se activa cuando se intenta enviar un formulario-->
-            
-                            <div class="form-group">
-                                <label for="rut">RUT CHILE</label>
-                                <input type="text" class="form-control" id="rut" aria-describedby="rutHelp" placeholder="Rut" required>
-                                <small id="rutHelp" class="form-text text-muted">Rut debe tener entre 9 y 10 caracteres.</small>
-                            </div>
-            
-                            <div class="form-group">
-                                <label for="nombre">Nombre</label>            <!--  arial-describedby Especifica uno o más ID de elementos que contienen la descripción o información adicional. -->
-                                <input type="text" class="form-control" id="nombre" aria-describedby="nombreHelp" placeholder="Nombre" minlength="3" maxlength="20" required>
-                                <small id="nombreHelp" class="form-text text-muted">Nombre debe tener entre 3 y 20 caracteres.</small> <!-- placeholder un área de texto  // minlength  minimolargo    maxlength largo maximo-->
-                            </div>
-            
-                            <div class="form-group">
-                                <label for="apellidoPaterno">Apellido Paterno</label>
-                                <input type="text" class="form-control" id="apellidoPaterno" aria-describedby="apellidoPaternoHelp" placeholder="Apellido Paterno" minlength="3" maxlength="20" required>
-                                <small id="apellidoPaternoHelp" class="form-text text-muted">Apellido Paterno debe tener entre 3 y 20 caracteres.</small>
-                            </div>
-            
-                            <div class="form-group">
-                                <label for="apellidoMaterno">Apellido Materno</label>
-                                <input type="text" class="form-control" id="apellidoMaterno" aria-describedby="apellidoMaternoHelp" placeholder="Apellido Materno" minlength="3" maxlength="20" required>
-                                <small id="apellidoMaternoHelp" class="form-text text-muted">Apellido Materno debe tener entre 3 y 20 caracteres.</small>
-                            </div>
-            
-                            <div class="form-group">
-                                <label for="fechaNacimiento">Fecha de Nacimiento</label>
-                                <input type="date" class="form-control" id="fechaNacimiento" aria-describedby="fechaNacimientoHelp" required>
-                                <small id="fechaNacimientoHelp" class="form-text text-muted">Fecha de Nacimiento es obligatoria.</small>
-                            </div>
-            
-                            <div class="form-group">
-                                <label for="edad">Edad</label>
-                                <input type="number" class="form-control" id="edad" aria-describedby="edadHelp" placeholder="Edad" min="28" max="35" required>
-                                <small id="edadHelp" class="form-text text-muted">Edad debe estar entre 28 y 35 años.</small>
-                            </div>
-            
-                            <div class="form-group">
-                                <label for="genero">Género</label>
-                                <select id="genero" class="form-control" aria-describedby="generoHelp" required>
-                                    <option value="">Selecciona Género</option>
-                                    <option value="Mujer">Mujer</option>
-                                    <option value="Hombre">Hombre</option>
-                                </select>
-                                <small id="generoHelp" class="form-text text-muted">Género debe ser mujer u hombre.</small>
-                            </div>
-            
-                            <div class="form-group">
-                                <label for="celular">Celular</label>
-                                <input type="tel" class="form-control" id="celular" aria-describedby="celularHelp" placeholder="Celular" required>
-                                <small id="celularHelp" class="form-text text-muted">Celular es obligatorio.</small>
-                            </div>
-            
-                            <div class="form-group">
-                                <label for="email">Correo electrónico</label>
-                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Correo electrónico" required>
-                                <small id="emailHelp" class="form-text text-muted">Correo electrónico debe ser válido.</small>
-                            </div>
-            
-                            <div class="form-group">
-                                <label for="profesion">Profesión</label>
-                                <input type="text" class="form-control" id="profesion" aria-describedby="profesionHelp" placeholder="Profesión" required>
-                                <small id="profesionHelp" class="form-text text-muted">Profesión es obligatoria.</small>
-                            </div>
-            
-                            <div class="form-group"> <!--rows se usa dentro de un elemento <textarea> especifica el número visible de filas de texto en el área de texto <textarea rows="4"></textarea> creará un área de texto = 4 filas-->
-                                <label for="motivacion">Cual es tu Motivación para trabajar en CaosNews/label>
-                                <textarea class="form-control" id="motivacion" rows="3" aria-describedby="motivacionHelp" placeholder="Motivación" required></textarea>
-                                <small id="motivacionHelp" class="form-text text-muted">Motivación es obligatoria.</small>
-                            </div> 
-            
-                            <button type="submit" class="btn btn-primary">Enviar</button>
-                            <button type="button" class="btn btn-secondary" onclick="generarCarta()">Crear Carta</button>
-                        </form>
+            <div class="container text-white" style="background-color: black; padding: 20px;">
+                <form action="" name="nameForm" method="post">
+                    <div class="container text-white d-flex justify-content-center align-items-center"
+                        style="min-height: 100vh;">
+                        <div class="container text-white" style="background-color: black; padding: 20px;">
+                            <form action="javascript:void(0);" name="nameForm" onsubmit="return validarFormulario()"
+                                method="post"> <!-- javascript:void(0) cuando se haga click en el el enlace  -->
+                                <h2>Formulario Periodista</h2>
+                                <!-- onsubmit se activa cuando se intenta enviar un formulario-->
+
+                                <div class="form-group">
+                                    <label for="rut">RUT CHILE</label>
+                                    <input type="text" class="form-control" id="rut" aria-describedby="rutHelp"
+                                        placeholder="Rut" required>
+                                    <small id="rutHelp" class="form-text text-muted">Rut debe tener entre 9 y 10
+                                        caracteres.</small>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="nombre">Nombre</label>
+                                    <!--  arial-describedby Especifica uno o más ID de elementos que contienen la descripción o información adicional. -->
+                                    <input type="text" class="form-control" id="nombre" aria-describedby="nombreHelp"
+                                        placeholder="Nombre" minlength="3" maxlength="20" required>
+                                    <small id="nombreHelp" class="form-text text-muted">Nombre debe tener entre 3 y 20
+                                        caracteres.</small>
+                                    <!-- placeholder un área de texto  // minlength  minimolargo    maxlength largo maximo-->
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="apellidoPaterno">Apellido Paterno</label>
+                                    <input type="text" class="form-control" id="apellidoPaterno"
+                                        aria-describedby="apellidoPaternoHelp" placeholder="Apellido Paterno"
+                                        minlength="3" maxlength="20" required>
+                                    <small id="apellidoPaternoHelp" class="form-text text-muted">Apellido Paterno debe
+                                        tener entre 3 y 20 caracteres.</small>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="apellidoMaterno">Apellido Materno</label>
+                                    <input type="text" class="form-control" id="apellidoMaterno"
+                                        aria-describedby="apellidoMaternoHelp" placeholder="Apellido Materno"
+                                        minlength="3" maxlength="20" required>
+                                    <small id="apellidoMaternoHelp" class="form-text text-muted">Apellido Materno debe
+                                        tener entre 3 y 20 caracteres.</small>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="fechaNacimiento">Fecha de Nacimiento</label>
+                                    <input type="date" class="form-control" id="fechaNacimiento"
+                                        aria-describedby="fechaNacimientoHelp" required>
+                                    <small id="fechaNacimientoHelp" class="form-text text-muted">Fecha de Nacimiento es
+                                        obligatoria.</small>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="edad">Edad</label>
+                                    <input type="number" class="form-control" id="edad" aria-describedby="edadHelp"
+                                        placeholder="Edad" min="28" max="35" required>
+                                    <small id="edadHelp" class="form-text text-muted">Edad debe estar entre 28 y 35
+                                        años.</small>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="genero">Género</label>
+                                    <select id="genero" class="form-control" aria-describedby="generoHelp" required>
+                                        <option value="">Selecciona Género</option>
+                                        <option value="Mujer">Mujer</option>
+                                        <option value="Hombre">Hombre</option>
+                                    </select>
+                                    <small id="generoHelp" class="form-text text-muted">Género debe ser mujer u
+                                        hombre.</small>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="celular">Celular</label>
+                                    <input type="tel" class="form-control" id="celular" aria-describedby="celularHelp"
+                                        placeholder="Celular" required>
+                                    <small id="celularHelp" class="form-text text-muted">Celular es obligatorio.</small>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">Correo electrónico</label>
+                                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                                        placeholder="Correo electrónico" required>
+                                    <small id="emailHelp" class="form-text text-muted">Correo electrónico debe ser
+                                        válido.</small>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="profesion">Profesión</label>
+                                    <input type="text" class="form-control" id="profesion"
+                                        aria-describedby="profesionHelp" placeholder="Profesión" required>
+                                    <small id="profesionHelp" class="form-text text-muted">Profesión es
+                                        obligatoria.</small>
+                                </div>
+
+                                <div class="form-group">
+                                    <!--rows se usa dentro de un elemento <textarea> especifica el número visible de filas de texto en el área de texto <textarea rows="4"></textarea> creará un área de texto = 4 filas-->
+                                    <label for="motivacion">Cual es tu Motivación para trabajar en CaosNews/label>
+                                        <textarea class="form-control" id="motivacion" rows="3"
+                                            aria-describedby="motivacionHelp" placeholder="Motivación"
+                                            required></textarea>
+                                        <small id="motivacionHelp" class="form-text text-muted">Motivación es
+                                            obligatoria.</small>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary">Enviar</button>
+                                <button type="button" class="btn btn-secondary" onclick="generarCarta()">Crear
+                                    Carta</button>
+                            </form>
+                        </div>
                     </div>
-                </div>
-            
+                </form>
+
+                <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+                    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+                    crossorigin="anonymous"></script>
+
+                <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+                    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+                    crossorigin="anonymous"></script>
+
                 <script src="formulario.js"></script>
 
+    </body>
+    <br><br><br><br><br>
 
 
 
-            </form>
-         
-</body>
-            <br><br><br><br><br>
-
-  
-    <script
-    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"
-  ></script>
-  
-  <script src="controlador.js"></script>  <!-- controlador para utilizar lo que esta en js-->
-
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
-    crossorigin="anonymous"
-  ></script>
 
 </html>
