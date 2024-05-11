@@ -11,6 +11,10 @@
 
 /*    estilo de la pagina fondo negro */
 
+.black {
+  background-color: black;
+  color: white; /*  fondo del volver negro*/
+}
 
 body {
       /*margen de margin: 20px; le da margen  contorno de arriba
