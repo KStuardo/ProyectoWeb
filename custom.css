@@ -1,0 +1,48 @@
+
+td {
+    padding: 5px 10px; /* espacio entre los textos de agregar carrito  para que no queden juntos  */
+}
+
+.container {
+    background-color: rgb(1, 1, 1); /* Fondo negro */
+    color: white; /* Texto blanco */
+    padding: 20px; /* Espacio interior */
+}
+
+.borrar-curso {    /*icono redondo de borrar curso agregado*/
+    background-color: red;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+ul {    
+    list-style: none;
+}
+
+
+.submenu {
+    position: relative;
+}
+
+.submenu #carrito{
+    display: none;
+}
+.submenu:hover #carrito{    /*formato colores de sub menu*/
+    display: block;
+    position: absolute;
+    right:0;
+
+    top:100%;
+    z-index: 1;
+    background-color: rgb(153, 43, 43);
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+}
+
+
+
+
