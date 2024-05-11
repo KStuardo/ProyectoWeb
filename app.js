@@ -1,3 +1,9 @@
+
+
+
+
+
+
 //Variables
 const carrito = document.querySelector('#carrito'); /**/ // Selecciona el elemento con el ID "carrito" en el HTML
 const listaCursos = document.querySelector('#lista-cursos'); /**/ // Selecciona el elemento con el ID "lista-cursos" en el HTML

@@ -1,3 +1,14 @@
+
+.btn-salto {
+  transition: transform 0.3s ease-in-out;
+}
+
+.btn-salto:hover {
+  transform: translateY(-5px);
+}
+
+
+
 /*efecto glitch*/
 .glitch {
     font-size: 4rem; /*tamaño del texto*/
