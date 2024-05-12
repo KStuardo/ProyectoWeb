@@ -141,33 +141,34 @@ function limpiarHTML() {
 }
 
 
-// función que retorna los valores de indicadores economicos
+
+
+
+// función que retorna los valores de indicadores económicos
 function getIndicadoresEconomicos() {
-    // fetch metodo que ejecuta solicitud GET a API miidnicador.cl
+    // fetch método que ejecuta solicitud GET a API miidnicador.cl
     fetch("https://mindicador.cl/api")
         .then((response) => response.json())
         .then((data) => {
             console.log(data)
             // transforma a array para recorrer el objeto con forEach
-            var arrayInidicadores = Object.entries(data);
+            var arrayIndicadores = Object.entries(data);
             
-            // asigna texto de leyenda
-            leyendaIndicadores.innerText = `Inidicadores económicos obtenidos desde ${arrayInidicadores[1][1]} con la versión ${arrayInidicadores[0][1]}`
-            
-            // recorre los elementos del array y genera fila en la tabla html
-            arrayInidicadores.forEach((indicador) => {
-                const row = document.createElement('tr'); /**/ // Crea una nueva fila para cada curso en el carrito se utiliza para definir una celda dentro de una fila 
-                row.innerHTML = `
-                    <tr>
-                        <td>${indicador[0,4.1]}</td>
-                        <td>${indicador[1][2]  }</td>   
-                        <td>${indicador[1]}</td>
-                        <td>${indicador[1]} </td>
-                        <td>${indicador[1]}</td>
-                        <td>${indicador[1]}</td>
-                `;
-
-                contenedorIndicadoresEconomicos.appendChild(row); /**/ // Agrega la fila al tbody de la tabla indicadores economicos en el HTM
+            // recorre los elementos del array y genera fila en la tabla HTML
+            arrayIndicadores.forEach((indicador, index) => {
+                // Excluye la impresión de los datos si es versión, autor o fecha
+                if (index !== 0 && index !== 1 && index !== 2) {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <tr>
+                        <td>${indicador[0]}</td>
+                        <td>${indicador[1].valor}</td>
+                        <td>${indicador[1].unidad_medida}</td>
+                        <td>${indicador[1].nombre}</td>
+                    `;
+    
+                    contenedorIndicadoresEconomicos.appendChild(row);
+                }
             })
         })
 }
