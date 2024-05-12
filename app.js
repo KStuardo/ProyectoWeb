@@ -19,7 +19,7 @@ function cargarEventListeners() {
     listaCursos.addEventListener('click', agregarCurso); /**/ // Escucha el evento click en el elemento con el ID "lista-cursos" y llama a la función agregarCurso
 
     //Elimina cursos del carrito
-    carrito.addEventListener("click", eliminarCurso); /**/ // Escucha el evento click en el elemento con el ID "carrito" y llama a la función eliminarCurso
+    // carrito.addEventListener("click", eliminarCurso); /**/ // Escucha el evento click en el elemento con el ID "carrito" y llama a la función eliminarCurso
 
     //muestra los cursos
     document.addEventListener('DOMContentLoaded', () => {
@@ -100,6 +100,11 @@ function leerDatosCurso(curso) {
 
     //Agregar elementos al carrito  
     carritoHTML();
+}
+
+function abrirCarrito() {
+    limpiarHTML()
+    document.getElementById("carrito").style.removeProperty("display")// quita el display:none
 }
 
 // Muestra el carrito de compras en el HTML

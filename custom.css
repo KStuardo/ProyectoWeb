@@ -75,27 +75,10 @@ td {
     font-weight: bold; /* Establece el peso de la fuente en negrita */
 }
 
-ul {    
-    list-style: none; /* Elimina los marcadores o numeración de la lista */
-}
-
-.submenu {
-    position: relative; /* Establece la posición relativa para los elementos secundarios */
-}
-
-.submenu #carrito {
-    display: none; /* Oculta inicialmente el elemento con ID "carrito" */
-}
 
 
-.submenu:hover #carrito { /* Aplica estilos al elemento con ID "carrito" cuando se pasa el mouse sobre el elemento "submenu" */
-    display: block; /* Hace que el elemento con ID "carrito" sea visible */
-    position: absolute; /* Establece la posición absoluta */
-    right: 0; /* Posiciona el elemento en el lado derecho */
-    top: 100%; /* Posiciona el elemento justo debajo del elemento primario */
-    z-index: 1; /* Establece el índice z para controlar el apilamiento de elementos */
-    background-color: rgb(153, 43, 43); /* Establece el color de fondo en un tono específico de rojo */
-    padding: 20px; /* Agrega un espacio de 20px alrededor del contenido del elemento */
-    min-height: 400px; /* Establece la altura mínima del elemento */
-    min-width: 300px; /* Establece el ancho mínimo del elemento */
+.carritoIcon{
+  display: block;
+  margin-right: 30px;
+  float: right;
 }
