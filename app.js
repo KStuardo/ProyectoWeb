@@ -8,7 +8,9 @@
 const carrito = document.querySelector('#carrito'); /**/ // Selecciona el elemento con el ID "carrito" en el HTML
 const listaCursos = document.querySelector('#lista-cursos'); /**/ // Selecciona el elemento con el ID "lista-cursos" en el HTML
 const contenedorCarrito = document.querySelector('#lista-carrito tbody'); /**/ // Selecciona el tbody dentro del elemento con el ID "lista-carrito" en el HTML
+const contenedorIndicadoresEconomicos = document.querySelector('#lista-indicadores-economicos tbody'); /**/ // Selecciona el tbody dentro del elemento con el ID "lista-carrito" en el HTML
 const vaciarCarritoBtn = document.querySelector('#vaciar-carrito'); /**/ // Selecciona el elemento con el ID "vaciar-carrito" en el HTML
+const legendIndicadores = document.querySelector("#leyendaIndicadores")
 let articulosCarrito = []; /**/ // Crea una variable para almacenar los artículos del carrito
 
 // *****
@@ -61,13 +63,8 @@ function productoAgregado(curso) {
 }
 
 function eliminarCurso(e) {
-    if (e.target.classList.contains('borrar-curso')) { /**/ // Verifica si el elemento clickeado contiene la clase "borrar-curso"
-        const cursoId = e.target.getAttribute("data-id"); /**/ // Obtiene el ID del curso a eliminar del atributo data-id
-
-        //Elimina del arreglo por el data-id
-        articulosCarrito = articulosCarrito.filter(curso => curso.id !== cursoId); /**/ // Filtra los artículos del carrito para eliminar el curso con el ID seleccionado
-        carritoHTML(); /**/ // Actualiza la visualización del carrito en el HTML
-    }
+    articulosCarrito = articulosCarrito.filter(curso => curso.id !== e.toString());
+    carritoHTML();
 }
 
 //Lee el contenido del HTML al que le dimos click y extrae la información del curso.
@@ -121,7 +118,7 @@ function carritoHTML() {
             <td>${curso.precio}</td>
             <td>${curso.cantidad} </td>
             <td>
-                <a href="#" class="borrar-curso" data-id="${curso.id}">X</a>
+                <a href="#" class="borrar-curso" onclick="eliminarCurso(${curso.id})" data-id="${curso.id}">X</a>
             </td>
         `;
         contenedorCarrito.appendChild(row); /**/ // Agrega la fila al tbody del carrito en el HTML
@@ -141,4 +138,36 @@ function limpiarHTML() {
     while (contenedorCarrito.firstChild) { /**/ // Mientras haya un primer hijo en el tbody del carrito
         contenedorCarrito.removeChild(contenedorCarrito.firstChild); /**/ // Elimina ese primer hijo
     }
+}
+
+
+// función que retorna los valores de indicadores economicos
+function getIndicadoresEconomicos() {
+    // fetch metodo que ejecuta solicitud GET a API miidnicador.cl
+    fetch("https://mindicador.cl/api")
+        .then((response) => response.json())
+        .then((data) => {
+            console.log(data)
+            // transforma a array para recorrer el objeto con forEach
+            var arrayInidicadores = Object.entries(data);
+            
+            // asigna texto de leyenda
+            leyendaIndicadores.innerText = `Inidicadores económicos obtenidos desde ${arrayInidicadores[1][1]} con la versión ${arrayInidicadores[0][1]}`
+            
+            // recorre los elementos del array y genera fila en la tabla html
+            arrayInidicadores.forEach((indicador) => {
+                const row = document.createElement('tr'); /**/ // Crea una nueva fila para cada curso en el carrito se utiliza para definir una celda dentro de una fila 
+                row.innerHTML = `
+                    <tr>
+                        <td>${indicador[0,4.1]}</td>
+                        <td>${indicador[1][2]  }</td>   
+                        <td>${indicador[1]}</td>
+                        <td>${indicador[1]} </td>
+                        <td>${indicador[1]}</td>
+                        <td>${indicador[1]}</td>
+                `;
+
+                contenedorIndicadoresEconomicos.appendChild(row); /**/ // Agrega la fila al tbody de la tabla indicadores economicos en el HTM
+            })
+        })
 }
