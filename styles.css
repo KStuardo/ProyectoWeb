@@ -54,6 +54,27 @@ main {
 .enlaces a img {
     background-color: white; /* Agrega fondo blanco a las imágenes enlaces */
 }
+
+
+.raccoon{
+  transition: all 0,3s;
+}
+
+
+.raccoon:hover{
+  transform: scale(1.15);
+}
+
+
+
+.card{
+  transition: all 0,2s;
+}
+
+
+.card:hover{
+  transform: scale(1.15);
+}
 /*fin estilos fondo de pagina y margen*/
 
 
