@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Formulario Periodista</title>
+    <title>Formulario Usuarios</title>
     <link rel="icon" type="image/png" href="images/favicom.png">
 
     <!-- Required meta tags -->
@@ -104,7 +104,7 @@
                         <div class="container text-white" style="background-color: black; padding: 20px;">
                             <form action="javascript:void(0);" name="nameForm" onsubmit="return validarFormulario()"
                                 method="post"> <!-- javascript:void(0) cuando se haga click en el el enlace  -->
-                                <h2>Formulario Periodista</h2>
+                                <h2>Formulario Usuarios</h2>
                                 <!-- onsubmit se activa cuando se intenta enviar un formulario-->
 
                                 <div class="form-group">
@@ -193,19 +193,10 @@
                                         obligatoria.</small>
                                 </div>
 
-                                <div class="form-group">
-                                    <!--rows se usa dentro de un elemento <textarea> especifica el número visible de filas de texto en el área de texto <textarea rows="4"></textarea> creará un área de texto = 4 filas-->
-                                    <label for="motivacion">Cual es tu Motivación para trabajar en Raccoon
-                                        <textarea class="form-control" id="motivacion" rows="3"
-                                            aria-describedby="motivacionHelp" placeholder="Motivación"
-                                            required></textarea>
-                                        <small id="motivacionHelp" class="form-text text-muted">Motivación es
-                                            obligatoria.</small>
-                                </div>
+                                
 
                                 <button type="submit" class="btn btn-primary">Enviar</button>
-                                <button type="button" class="btn btn-secondary" onclick="generarCarta()">Crear
-                                    Carta</button>
+                                
                             </form>
                         </div>
                     </div>

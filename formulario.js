@@ -73,8 +73,8 @@ $('#edad').focusout(function (evento) { //crea una funcion tipo evento utilizand
     
 });
 //--------------------------------------------
-//---validador de caracteres 
-
+//---validador registro usuarios 
+validationCustom01
 
 
 
