@@ -195,7 +195,7 @@
 
                                 <div class="form-group">
                                     <!--rows se usa dentro de un elemento <textarea> especifica el número visible de filas de texto en el área de texto <textarea rows="4"></textarea> creará un área de texto = 4 filas-->
-                                    <label for="motivacion">Cual es tu Motivación para trabajar en CaosNews/label>
+                                    <label for="motivacion">Cual es tu Motivación para trabajar en Raccoon
                                         <textarea class="form-control" id="motivacion" rows="3"
                                             aria-describedby="motivacionHelp" placeholder="Motivación"
                                             required></textarea>
@@ -203,13 +203,63 @@
                                             obligatoria.</small>
                                 </div>
 
-                                <button type="submit" class="btn btn-primary">Enviar</button>
+                                <div class="container">
+                                   
+                                    
+                                    <button type="submit" class="btn btn-primary" onclick="alert('Mensaje enviado con exito')">Enviar</button>
+                                  </div>
                                 <button type="button" class="btn btn-secondary" onclick="generarCarta()">Crear
                                     Carta</button>
                             </form>
                         </div>
                     </div>
                 </form>
+
+                  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content bg-dark text-white">
+        <div class="modal-header">
+         
+          <img src="images/racoon.logo-removebg-preview.png" alt="logo" width="260px"
+            height="260px">
+            
+          
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="container">
+            <form class="m-2">
+              <div class="mb-3">
+
+                <label for="exampleInputEmail1" class="form-label">Correo</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text text-white">Recuerda no compartir tus contraseñas</div>
+              </div>
+              <div class="mb-3">
+
+                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+
+                <label class="form-check-label" for="exampleCheck1">Recuerdame</label>
+                <br>
+                <a href="#" class="form-check-label" for="exampleCheck1">Olvide mi contraseña</a>
+                <a href="/ProyectoWeb/FormularioUsuarios.html" class="form-check-label"
+                  for="exampleCheck1">Registrarse</a>
+              </div>
+
+              <button type="submit" class="btn btn-warning">Ingresar</button>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Cerrar</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
 
                 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
                 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
